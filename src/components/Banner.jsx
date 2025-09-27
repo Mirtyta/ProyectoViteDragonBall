@@ -8,7 +8,7 @@ import Logod from "../assets/logoDragonBall.png"
 const Header = () =>{
     return(
         <div className="banner">
-            <video className="banner-video" autoPlay muted loop poster="../assets/logo.png">
+            <video className="banner-video" autoPlay muted loop>
                 <source src={Fondo} type="video/mp4" />
                 Tu navegador no soporta el video.
             </video>
