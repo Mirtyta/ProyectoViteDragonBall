@@ -14,7 +14,6 @@ function CharacterList({ characters }) {
           id={char.id}
           image={char.image}
           name={char.name}
-          race={char.race}
           description={char.description}
           />
         ))}

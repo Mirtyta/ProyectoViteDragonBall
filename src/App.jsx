@@ -13,8 +13,7 @@ function App() {
     <>
     <Banner/>
     <CharacterList characters={characters} />;
-    </>
-   
+    </>   
   )
 }
 

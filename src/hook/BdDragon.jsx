@@ -28,7 +28,7 @@ export function useFetchCharacters() {
 
         // Validar que los campos importantes existan en cada personaje
         const validated = data.items.map((char) => {
-          if (!char.id ||!char.image || !char.name || !char.race || !char.description) {
+          if (!char.id ||!char.image || !char.name || !char.description) {
             throw new Error(`Faltan campos obligatorios en el personaje con ID: ${char.id}`);
           }
           return {

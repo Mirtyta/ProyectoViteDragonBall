@@ -9,41 +9,32 @@ function CharacterCard({
   id,
   image, 
   name, 
-  race, 
   description 
 }) {
   // ID único para cada collapse
-  const collapseId = `info-${id}`;
+  // const collapseId = `info-${id}`;
 
   return (
-    <div className="producto">
-        <img src={image} alt={name}/>
-    
-        <div className="position-relative">
-          <div className="card-body">
-            <h4>{name}</h4>
-            <span>
-              <Boton
-                texto="Detalle:"
-                className="boton"
-                data-bs-toggle="collapse"
-                data-bs-target={`#${collapseId}`}
-                aria-expanded="false"
-                aria-controls={collapseId}
-              />  
-            </span>
-          </div>
-          <div id={collapseId} className="collapse up-collapse">
-            <div className="card-detalle">
-              <br />
-              <p><strong>Raza:</strong> {race}</p>
-              <span>DESCRIPCION:</span>
-              <p>{description} </p>
-            </div>
-          </div>
-        </div>
+
+  <div className="card">
+    <div className="imgBx">
+      {/* <!--   image  --> */}
+      <img src={image} alt={name}/>
+    </div>
+    <div className="content">
+      <div className="name">
+        {/* <!-- Name --> */}
+        <h4>{name}</h4>        
+      </div>       
+      <div className="details">    
+      {/* <!-- descripcion --> */}
+        <h5>Descripcion</h5>
+        <p>{description}</p>     
+        <p>{id}</p>     
       </div>
-  );
+    </div>
+  </div>   
+  )
 }
 
 export default CharacterCard;

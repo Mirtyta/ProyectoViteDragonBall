@@ -1,7 +1,6 @@
 import "./Banner.css"
 import Goku from "../assets/variosVolando.png"
-// import Varios from "../assets/variosVolando.png"
-import Fondo from "../assets/fondo2.mp4"
+import Fondo from "../assets/nubes.mp4"
 import Logod from "../assets/logoDragonBall.png"
 
 
